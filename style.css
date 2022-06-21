@@ -80,6 +80,8 @@ nav {
   padding: 10px;
 }
 
+/* Nav bar */
+
 .navbar__logo {
   display: flex;
   justify-content: center;
@@ -116,6 +118,8 @@ nav {
   border-radius: 5px;
 }
 
+/* Home */
+
 #home {
   background: url(./imgs/home-background.png) center/cover;
   height: 100vh;
@@ -139,3 +143,138 @@ nav {
   border: 2px solid var(--color-white);
   border-radius: 50%;
 }
+
+.home__container h1 {
+  color: var(--color-white);
+}
+
+.home__container h2 {
+  color: var(--color-white);
+}
+
+.home__contact {
+  border: 1px solid white;
+  border-radius: 3px;
+  background-color: transparent;
+  padding: 10px;
+  color: var(--color-white);
+}
+
+/* About */
+
+#about {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 50px 100px;
+}
+
+.about__desc {
+  margin-bottom: 100px;
+}
+
+.about__majors {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.major__icon {
+  width: 150px;
+  height: 150px;
+  border: 1px solid var(--color-blue);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.major__icon i {
+  color: var(--color-blue);
+  font-size: var(--font-large);
+}
+
+.major__title {
+  font-size: var(--font-medium);
+  font-weight: var(--weight-bold);
+  margin-bottom: 10px;
+}
+
+.about__jobs {
+  text-align: left;
+}
+
+/* Skill */
+
+#skills {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-color: var(--color-yellow);
+}
+
+#skills .section__container {
+  margin: 50px 50px;
+}
+
+#skills .section__container p {
+  margin: 0 30px;
+  margin-bottom: 30px;
+}
+
+.skillset {
+  width: 100%;
+  color: var(--color-white);
+  background-color: var(--color-dark-grey);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.skillset__title {
+  color: var(--color-white);
+}
+
+.skillset__left {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-content: space-around;
+  padding: 10px 20px;
+}
+
+.skillset__right {
+  width: 40%;
+  height: 100%;
+}
+.skillset__right h3 {
+  margin: 0;
+}
+
+.skillset__right > .tools {
+  background-color: var(--color-grey);
+  padding: 20px 0;
+}
+
+.skillset__right > .tools > ul {
+  padding: 0;
+}
+
+.skillset__right > .etc {
+  background-color: var(--color-light-grey);
+  padding: 20px 0;
+}
+
+.skillset__right > .etc > ul {
+  padding: 0;
+}
+
+/* Works */
