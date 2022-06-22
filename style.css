@@ -486,28 +486,28 @@ button {
 /* Contact */
 
 #contact {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  padding: 30px 0;
   text-align: center;
   background-color: var(--color-pink);
-  padding: 50px;
 }
 
-#contact h1,
-#contact h3,
-#contact i,
-#contact p {
+.contact__title,
+.contact__email,
+.contact__links,
+.contact__rights {
   color: var(--color-white);
 }
 
-.contact__email {
-  margin-bottom: 30px;
+.contact__links {
+  font-size: var(--font-large);
+  margin: 24px 0;
 }
 
-.contact__links {
-  margin-bottom: 30px;
-}
 .contact__links i {
-  font-size: var(--font-large);
+  transition: all var(--animation-duration) ease-in;
+}
+
+.contact__links i:hover {
+  transform: scale(1.1);
+  color: var(--color-yellow);
 }
