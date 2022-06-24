@@ -23,7 +23,15 @@ navbarMenu.addEventListener('click', (event) => {
   if (link == null) {
     return;
   }
+  navbarMenu.classList.remove('open');
   scrollIntoView(link);
+});
+
+//Navbar toggle button for small screen
+const toggleBtn = document.querySelector('.navbar__toggle-btn');
+
+toggleBtn.addEventListener('click', () => {
+  navbarMenu.classList.toggle('open');
 });
 
 // Handle click on "contact me" button on home
@@ -68,6 +76,14 @@ workBtnContainer.addEventListener('click', (event) => {
   if (filter == null) {
     return;
   }
+
+  //Remove selection from the previous item and select the new one
+  const active = document.querySelector('.category__btn.selected');
+  active.classList.remove('selected');
+  const target =
+    event.target.nodeName === 'BUTTON' ? event.target : event.target.parentNode;
+  target.classList.add('selected');
+
   projectContainer.classList.add('anim-out');
   setTimeout(() => {
     projects.forEach((project) => {
@@ -80,8 +96,6 @@ workBtnContainer.addEventListener('click', (event) => {
     projectContainer.classList.remove('anim-out');
   }, 300);
 });
-
-workBtnContainer.animate();
 
 function scrollIntoView(selector) {
   const scrollTo = document.querySelector(selector);
