@@ -131,7 +131,7 @@ function scrollIntoView(selector) {
   selectNavItem(navItems[sectionIds.indexOf(selector)]);
 }
 
-const observerObtions = {
+const observerObtions = {아
   root: null,
   rootMargin: '0px',
   threshold: 0.3,
